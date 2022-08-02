@@ -24,14 +24,14 @@ PRODUCT_PACKAGES += Traceur
 endif
 
 PRODUCT_COPY_FILES := \
-    device/rockchip/common/tv/permissions/tv_core_hardware.xml:system/etc/permissions/tv_core_hardware.xml \
-    device/rockchip/common/permissions/rockchip.software.audio.xml:system/etc/permissions/rockchip.software.audio.xml
+    device/namtso/common/tv/permissions/tv_core_hardware.xml:system/etc/permissions/tv_core_hardware.xml \
+    device/namtso/common/permissions/rockchip.software.audio.xml:system/etc/permissions/rockchip.software.audio.xml
 
 PRODUCT_COPY_FILES += \
     device/google/atv/atv-component-overrides.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/atv-component-overrides.xml
 
 DEVICE_PACKAGE_OVERLAYS := \
-    device/rockchip/common/tv/overlay
+    device/namtso/common/tv/overlay
 
 # From build/target/product/core_base.mk
 PRODUCT_PACKAGES += \
