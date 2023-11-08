@@ -181,24 +181,18 @@ on boot
     chmod 0664 /sys/class/leds/net-green/brightness
     chown system system /sys/class/leds/net-red/brightness
     chmod 0664 /sys/class/leds/net-red/brightness
-    chown system system /sys/class/leds/red_led/brightness
-    chown system system /sys/class/leds/red_led/trigger
-    chown system system /sys/class/leds/red_ledr/timer
-    chmod 0664 /sys/class/leds/red_led/brightness
-    chmod 0664 /sys/class/leds/red_led/trigger
-    chmod 0664 /sys/class/leds/red_led/timer
-    chown system system /sys/class/leds/green_led/brightness
-    chown system system /sys/class/leds/green_led/trigger
-    chown system system /sys/class/leds/green_led/timer
-    chmod 0664 /sys/class/leds/green_led/brightness
-    chmod 0664 /sys/class/leds/green_led/trigger
-    chmod 0664 /sys/class/leds/green_led/timer
-    chown system system /sys/class/leds/blue_led/brightness
-    chown system system /sys/class/leds/blue_led/trigger
-    chown system system /sys/class/leds/blue_led/timer
-    chmod 0664 /sys/class/leds/blue_led/brightness
-    chmod 0664 /sys/class/leds/blue_led/trigger
-    chmod 0664 /sys/class/leds/blue_led/timer
+    chown system system /sys/class/leds/white_led/brightness
+    chown system system /sys/class/leds/white_led/trigger
+    chown system system /sys/class/leds/white_led/timer
+    chmod 0664 /sys/class/leds/white_led/brightness
+    chmod 0664 /sys/class/leds/white_led/trigger
+    chmod 0664 /sys/class/leds/white_led/timer
+    chown system system /sys/class/leds/ext_led/brightness
+    chown system system /sys/class/leds/ext_led/trigger
+    chown system system /sys/class/leds/ext_led/timer
+    chmod 0664 /sys/class/leds/ext_led/brightness
+    chmod 0664 /sys/class/leds/ext_led/trigger
+    chmod 0664 /sys/class/leds/ext_led/timer
 
     chown root system /sys/class/graphics/fb0/map
     chmod 0664 /sys/class/graphics/fb0/map
