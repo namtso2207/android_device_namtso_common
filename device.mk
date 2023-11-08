@@ -356,6 +356,9 @@ $(call inherit-product, device/namtso/common/modules/recovery.mk)
 # rknn modules
 $(call inherit-product, device/namtso/common/modules/rknn.mk)
 
+# rknn modules
+$(call inherit-product, device/namtso/common/modules/icm43600.mk)
+
 # Power AIDL
 PRODUCT_PACKAGES += \
     android.hardware.power \

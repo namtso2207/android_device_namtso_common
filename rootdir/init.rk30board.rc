@@ -15,6 +15,7 @@ on post-fs-data
     mkdir /data/vendor/logs 0755 root shell
     mkdir /data/vendor/audio 0755 system system
     mkdir /data/vendor/camera 0755 cameraserver cameraserver
+    mkdir /data/vendor/sensor 0770 root system
 
 on init
     # set temperature control policy as normal mode
