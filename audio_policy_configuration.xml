@@ -82,9 +82,12 @@
                 </devicePort>
                 <devicePort tagName="HDMI Out" type="AUDIO_DEVICE_OUT_AUX_DIGITAL" role="sink">
                 </devicePort>
+                <devicePort tagName="HDMI_1 Out" type="VX_ROCKCHIP_OUT_HDMI0" role="sink">
+                </devicePort>
                 <devicePort tagName="SPDIF Out" type="AUDIO_DEVICE_OUT_SPDIF" role="sink">
                 </devicePort>
-
+                <devicePort tagName="SPDIF_1 Out" type="VX_ROCKCHIP_OUT_SPDIF0" role="sink">
+                </devicePort>
                 <devicePort tagName="Built-In Mic" type="AUDIO_DEVICE_IN_BUILTIN_MIC" role="source">
                 </devicePort>
                 <devicePort tagName="Wired Headset Mic" type="AUDIO_DEVICE_IN_WIRED_HEADSET" role="source">
@@ -110,6 +113,10 @@
                 <route type="mix" sink="HDMI Out"
                        sources="primary output,hdmi_bitstream"/>
                 <route type="mix" sink="SPDIF Out"
+                    sources="primary output,spdif_passthrough"/>
+                <route type="mix" sink="HDMI_1 Out"
+                       sources="primary output,hdmi_bitstream"/>
+                <route type="mix" sink="SPDIF_1 Out"
                        sources="primary output,spdif_passthrough"/>
                 <route type="mix" sink="primary input"
                        sources="Built-In Mic,Wired Headset Mic,BT SCO Headset Mic,HDMIIn"/>
