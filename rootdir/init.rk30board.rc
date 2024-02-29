@@ -199,6 +199,7 @@ on boot
     chmod 777 /sys/class/mcu/mac_addr
     chmod 777 /sys/class/mcu/sn_addr
     chmod 777 /sys/class/mcu/rst
+    chmod 777 /sys/class/mcu/ageing_test
 
     chown root system /sys/class/graphics/fb0/map
     chmod 0664 /sys/class/graphics/fb0/map
