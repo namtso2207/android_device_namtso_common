@@ -1,6 +1,17 @@
 dontaudit system_app mnt_vendor_file:dir search;
 #for gpu
 allow system_app sysfs_usb:file rw_file_perms;
+#for factory
+allow system_app sysfs_thermal:file { getattr open };
+allow system_app proc_modules:file { getattr open read };
+allow system_app proc_net:file { read getattr open };
+allow system_app self:udp_socket ioctl;
+allow system_app self:capability { dac_read_search chown };
+allow system_app system_data_root_file:dir { add_name setattr };
+allow system_app system_data_root_file:file { write getattr execute setattr };
+#for mac_tool
+allow system_app system_data_root_file:dir { create open read };
+allow system_app system_data_root_file:file { create open read };
 #for ota
 allow system_app selinuxfs:file { read open };
 allow system_app mnt_media_rw_file:dir { getattr };
